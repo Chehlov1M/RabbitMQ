@@ -4,31 +4,41 @@
 
 ## Задание 1. Установка RabbitMQ
 
-![Скриншот интерфейса **rabbitmq.png**](rabbitmq.png)
+Результат успешной установки подтверждён скриншотом веб‑интерфейса RabbitMQ:
 
+![Интерфейс RabbitMQ](rabbitmq.png)
 
 ## Задание 2. Отправка и получение сообщений
 
-![Скриншот веб-интерфейса под названием **hello**](hello.png)
+Демонстрация работы с очередями:
 
-![Скриншот терминала.](consumer.png)
+1. Скриншот веб‑интерфейса с очередью `hello`:
+   ![Очередь hello](hello.png)
 
-## Задание 3. Подготовка HA кластера
+2. Скриншот терминала, показывающий работу потребителя (consumer):
+   ![Вывод терминала (consumer)](consumer.png)
 
-![Скриншот веб-интерфейса с информацией о доступных нодах в кластере.](nodes.png)
+## Задание 3. Подготовка HA‑кластера
 
-![Скриншот веб-интерфейса **policies**](policies.png)
+Результаты настройки высокодоступного кластера RabbitMQ:
 
-![Скриншот вывода команды  **rabbitmqctl cluster_status**](cluster.png)
+1. Состояние нод кластера (скриншот веб‑интерфейса):
+   ![Доступные ноды в кластере](nodes.png)
 
-![Скриншот вывода команды  **rabbitmqctl cluster_status**](cluster_status.png)
+2. Настроенные политики (policies) кластера:
+   ![Policies кластера](policies.png)
 
-![Скриншот вывода команды  **rabbitmqadmin get queue='hello'**](queue.png)
+3. Статус кластера через команду `rabbitmqctl cluster_status`:
+   * Вариант 1: ![Статус кластера](cluster.png)
+   * Вариант 2: ![Детальный статус кластера](cluster_status.png)
 
-![Скриншот вывода команды  **rabbitmqadmin get queue='hello'**](queue_hello.png)
+4. Информация о очереди `hello` через `rabbitmqadmin`:
+   * Скриншот 1: ![Данные очереди hello](queue.png)
+   * Скриншот 2: ![Детали очереди hello](queue_hello.png)
 
-![Скриншот вывода команды **python_consumer**](python_consumer.png)
+5. Работа Python‑потребителя:
+   ![Вывод Python‑consumer](python_consumer.png)
 
-![Скриншот вывода команды  **consumer**](consumer.png)
-
-![Скриншот вывода команды  **rabbitmqadmin**](rabbitmqadmin.png)
+6. Дополнительные данные:
+   * Вывод команды `consumer`: ![Consumer output](consumer.png)
+   * Общий вывод `rabbitmqadmin`: ![RabbitMQ Admin](rabbitmqadmin.png)
