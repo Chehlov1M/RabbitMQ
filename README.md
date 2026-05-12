@@ -27,8 +27,8 @@
 
 ![Скриншот вывода команды  **rabbitmqadmin get queue='hello'**](queue_hello.png)
 
-![Скриншот вывода команды](python_consumer.png)
+![Скриншот вывода команды **python_consumer**](python_consumer.png)
 
-![Скриншот вывода команды  **rabbitmqadmin get queue='hello'**](consumer.png)
+![Скриншот вывода команды  **consumer**](consumer.png)
 
 ![Скриншот вывода команды  **rabbitmqadmin**](rabbitmqadmin.png)
